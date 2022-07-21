@@ -7,7 +7,7 @@ import com.kotlinproject.ecommerceapp.repo.SepetRepository
 
 class SepetFragmentViewModel : ViewModel(){
 
-    var kullanici_adi : String = "Hasip"
+    var kullanici_adi : String = "kubra"
     var sepetListesi = MutableLiveData<List<Sepet>>()
     val srepo = SepetRepository()
 

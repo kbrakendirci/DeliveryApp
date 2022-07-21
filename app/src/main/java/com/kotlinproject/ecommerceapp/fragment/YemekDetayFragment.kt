@@ -27,7 +27,7 @@ class YemekDetayFragment : Fragment() {
 
         tasarim = DataBindingUtil.inflate(inflater, R.layout.fragment_yemek_detay, container, false)
         tasarim.yemekDetayFragment = this
-        tasarim.hasip = "Hasip"
+        tasarim.kubra = "kubra"
         val bundle : YemekDetayFragmentArgs by navArgs()
         val gelenYemek = bundle.yemek
 

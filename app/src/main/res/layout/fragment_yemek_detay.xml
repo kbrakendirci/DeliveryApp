@@ -4,9 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
-        <variable
-            name="hasip"
-            type="String" />
+        <variable name="kubra" type="String" />
         <variable name="yemekNesnesi" type="com.kotlinproject.ecommerceapp.entity.Yemekler" />
         <variable name="yemekDetayFragment" type="com.kotlinproject.ecommerceapp.fragment.YemekDetayFragment" />
 
@@ -83,7 +81,7 @@
             android:layout_marginBottom="30dp"
             android:background="@drawable/button_background"
             android:fontFamily="@font/syne_tactile"
-            android:onClick="@{() -> yemekDetayFragment.buttonSepeteEkle(textViewDetayYemekAd.getText().toString(), yemekNesnesi.yemek_resim_adi.toString(), yemekNesnesi.yemek_fiyat, Integer.valueOf(textViewYemekAdet.getText().toString()), hasip) + yemekDetayFragment.sepeteEklendiBildirim() + yemekDetayFragment.gecis()}"
+            android:onClick="@{() -> yemekDetayFragment.buttonSepeteEkle(textViewDetayYemekAd.getText().toString(), yemekNesnesi.yemek_resim_adi.toString(), yemekNesnesi.yemek_fiyat, Integer.valueOf(textViewYemekAdet.getText().toString()), kubra) + yemekDetayFragment.sepeteEklendiBildirim() + yemekDetayFragment.gecis()}"
             android:text="  Sepete Ekle  "
             android:textColor="@color/lacivert"
             app:layout_constraintBottom_toBottomOf="parent"
