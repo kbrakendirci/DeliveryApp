@@ -23,8 +23,10 @@ class AnasayfaFragmentViewModel : ViewModel() {
         yrepo.yemekAra(sonuc)
     }
 
-    fun fiyatSirala(){ yrepo.fiyatSirala()}
+    fun fiyatArtanSirala(){ yrepo.fiyatArtanSirala()}
+    fun fiyatAzalanSirala(){ yrepo.fiyatAzalanSirala()}
 
     fun A_ZSirala(){yrepo.A_ZSirala()}
+    fun Z_ASirala(){yrepo.Z_ASirala()}
 
 }

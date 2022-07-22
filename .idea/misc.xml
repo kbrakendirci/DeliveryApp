@@ -3,8 +3,27 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable/button_background.xml" value="0.1921875" />
+        <entry key="app/src/main/res/drawable/cart.xml" value="0.1921875" />
+        <entry key="app/src/main/res/drawable/detay_resim.xml" value="0.1921875" />
+        <entry key="app/src/main/res/drawable/eksi_resim.xml" value="0.1921875" />
+        <entry key="app/src/main/res/drawable/home.xml" value="0.1921875" />
+        <entry key="app/src/main/res/drawable/iconbackground.xml" value="0.1921875" />
+        <entry key="app/src/main/res/drawable/profil.xml" value="0.1921875" />
+        <entry key="app/src/main/res/drawable/resim_ara.xml" value="0.1921875" />
+        <entry key="app/src/main/res/drawable/rounded_edge.xml" value="0.1921875" />
+        <entry key="app/src/main/res/drawable/search_rounded.xml" value="0.1921875" />
+        <entry key="app/src/main/res/drawable/sil_resim.xml" value="0.1921875" />
+        <entry key="app/src/main/res/drawable/yemek_card_rounded.xml" value="0.1921875" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_splash.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_anasayfa.xml" value="0.25" />
         <entry key="app/src/main/res/layout/fragment_sepet.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_yemek_detay.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/sepet_card_tasarim.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/yemek_card_tasarim.xml" value="0.1" />
+        <entry key="app/src/main/res/menu/menu_bottom.xml" value="0.13796296296296295" />
+        <entry key="app/src/main/res/menu/toolbar_menu.xml" value="0.13796296296296295" />
       </map>
     </option>
   </component>

@@ -9,8 +9,11 @@
     <color name="white">#FFFFFFFF</color>
 
 
-    <color name="pembe">#D94350</color>
+    <color name="pembe">#f6f5f4</color>
     <color name="lacivert">#212130</color>
-    <color name="acik_pembe">#FF6464</color>
+    <color name="acik_pembe">#ebb63d</color>
     <color name="orta_pembe">#9A5959</color>
+    <color name="chip">#ffc632</color>
+
+
 </resources>

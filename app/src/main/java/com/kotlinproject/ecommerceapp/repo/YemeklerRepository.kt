@@ -44,7 +44,7 @@ class YemeklerRepository {
         })
     }
 
-    fun fiyatSirala() {
+    fun fiyatArtanSirala() {
 
         ydao.tumYemekler().enqueue(object : Callback<YemeklerCevap> {
             override fun onResponse(call: Call<YemeklerCevap>?, response: Response<YemeklerCevap>) {
@@ -71,7 +71,36 @@ class YemeklerRepository {
         })
 
     }
+    fun Z_ASirala() {
 
+        ydao.tumYemekler().enqueue(object : Callback<YemeklerCevap> {
+            override fun onResponse(call: Call<YemeklerCevap>?, response: Response<YemeklerCevap>) {
+                val liste = response.body().yemekler
+
+                val sirala =  liste.sortedWith(compareBy { it.yemek_adi })
+                val reverselist= sirala.reversed()
+                yemeklerListesi.value = reverselist
+            }
+            override fun onFailure(call: Call<YemeklerCevap>?, t: Throwable?) {}
+        })
+
+    }
+
+    fun fiyatAzalanSirala() {
+
+        ydao.tumYemekler().enqueue(object : Callback<YemeklerCevap> {
+            override fun onResponse(call: Call<YemeklerCevap>?, response: Response<YemeklerCevap>) {
+                val liste = response.body().yemekler
+
+                val sorted =  liste.sortedWith(compareBy { it.yemek_fiyat })
+                val reverselist= sorted.reversed()
+                yemeklerListesi.value = reverselist
+
+            }
+            override fun onFailure(call: Call<YemeklerCevap>?, t: Throwable?) {}
+        })
+
+    }
 
 
 }

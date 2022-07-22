@@ -24,7 +24,6 @@
             android:layout_marginStart="0dp"
             android:layout_marginTop="0dp"
             android:layout_marginEnd="0dp"
-            android:background="@color/acik_pembe"
             android:orientation="horizontal"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -63,37 +62,25 @@
             app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
             app:spanCount="2" />
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rvPopular"
-            android:background="@color/orta_pembe"
-            android:layout_width="match_parent"
-            android:layout_height="125dp"
-            android:adapter="@{popularAdapter}"
-            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/linearLayout"
-            android:orientation="horizontal"
-            app:spanCount="1"/>
-
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/constraintLayout"
             android:layout_width="0dp"
             android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/rvPopular">
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout">
 
             <com.google.android.material.chip.Chip
                 android:id="@+id/chip4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="50dp"
+                android:layout_marginStart="10dp"
                 android:fontFamily="@font/syne_tactile"
-                android:text="A..Z"
                 android:onClick="@{() -> anasayfaFragment.A_ZSirala()}"
+                android:text="A -> Z"
                 android:textColor="@color/white"
-                app:chipBackgroundColor="@color/lacivert"
+                app:chipBackgroundColor="@color/chip"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/textView5"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -102,29 +89,42 @@
                 android:id="@+id/chip5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="50dp"
-                android:onClick="@{() -> anasayfaFragment.fiyatSirala()}"
+                android:layout_marginStart="10dp"
                 android:fontFamily="@font/syne_tactile"
-                android:text="Fiyata Göre"
+                android:onClick="@{() -> anasayfaFragment.Z_ASirala()}"
+                android:text="Z -> A"
                 android:textColor="@color/white"
-                app:chipBackgroundColor="@color/lacivert"
+                app:chipBackgroundColor="@color/chip"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/chip4"
                 app:layout_constraintTop_toTopOf="parent" />
 
-            <TextView
-                android:id="@+id/textView5"
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="30dp"
+                android:layout_marginStart="10dp"
                 android:fontFamily="@font/syne_tactile"
-                android:text="Sırala"
-                android:textColor="@color/lacivert"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                android:onClick="@{() -> anasayfaFragment.fiyatSirala()}"
+                android:text="Fiyata Göre  ▲"
+                android:textColor="@color/white"
+                app:chipBackgroundColor="@color/chip"
+                app:layout_constraintStart_toEndOf="@+id/chip5"
+                tools:layout_editor_absoluteY="1dp" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/syne_tactile"
+                android:onClick="@{() -> anasayfaFragment.fiyatSirala()}"
+                android:text="Fiyata Göre ▼"
+                android:textColor="@color/white"
+                app:chipBackgroundColor="@color/chip"
+                app:layout_constraintStart_toEndOf="@+id/chip6"
+                tools:layout_editor_absoluteY="1dp" />
+
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>

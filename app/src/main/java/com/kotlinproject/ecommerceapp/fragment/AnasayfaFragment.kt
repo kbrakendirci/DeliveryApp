@@ -64,18 +64,14 @@ class AnasayfaFragment : Fragment() , SearchView.OnQueryTextListener {
     }
 
     override fun onQueryTextSubmit(query: String): Boolean {
-        tasarim.rvPopular.visibility = View.GONE
-        viewModel.ara(query)
-        if(query.length==0) tasarim.rvPopular.visibility = View.VISIBLE
+          viewModel.ara(query)
 
         return true
     }
 
     override fun onQueryTextChange(newText: String): Boolean {
-        tasarim.rvPopular.visibility = View.GONE
-        viewModel.ara(newText)
-        if(newText.length==0) tasarim.rvPopular.visibility = View.VISIBLE
-        return true
+         viewModel.ara(newText)
+         return true
     }
 
     override fun onResume() {
@@ -84,9 +80,11 @@ class AnasayfaFragment : Fragment() , SearchView.OnQueryTextListener {
         viewModelSepet.sepetYemekGetir()
     }
 
-    fun fiyatSirala(){ viewModel.fiyatSirala() }
+    fun fiyatSirala(){ viewModel.fiyatArtanSirala() }
 
     fun A_ZSirala(){ viewModel.A_ZSirala() }
 
+
+    fun Z_ASirala(){ viewModel.Z_ASirala() }
 }
 
