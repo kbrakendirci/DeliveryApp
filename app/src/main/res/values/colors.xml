@@ -14,6 +14,37 @@
     <color name="acik_pembe">#ebb63d</color>
     <color name="orta_pembe">#9A5959</color>
     <color name="chip">#ffc632</color>
+    <color name="maincolor">#ffca05</color>
+
+
+    <color name="bg_screen1">#6c97f2</color>
+    <color name="bg_screen2">#6c97f2</color>
+    <color name="bg_screen3">#6c97f2</color>
+    <color name="bg_screen4">#6c97f2</color>
+
+    <color name="dot_dark_screen1">#ffb466</color>
+    <color name="dot_dark_screen2">#ffb466</color>
+    <color name="dot_dark_screen3">#ffb466</color>
+    <color name="dot_dark_screen4">#ffb466</color>
+
+    <color name="dot_light_screen1">#FFA845</color>
+    <color name="dot_light_screen2">#FFA845</color>
+    <color name="dot_light_screen3">#FFA845</color>
+    <color name="dot_light_screen4">#FFA845</color>
+
+    <array name="array_dot_active">
+        <item>@color/dot_light_screen1</item>
+        <item>@color/dot_light_screen2</item>
+        <item>@color/dot_light_screen3</item>
+        <item>@color/dot_light_screen4</item>
+    </array>
+
+    <array name="array_dot_inactive">
+        <item>@color/dot_dark_screen1</item>
+        <item>@color/dot_dark_screen2</item>
+        <item>@color/dot_dark_screen3</item>
+        <item>@color/dot_dark_screen4</item>
+    </array>
 
 
 </resources>

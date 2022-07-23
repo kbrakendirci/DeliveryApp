@@ -14,12 +14,17 @@
         <entry key="app/src/main/res/drawable/rounded_edge.xml" value="0.1921875" />
         <entry key="app/src/main/res/drawable/search_rounded.xml" value="0.1921875" />
         <entry key="app/src/main/res/drawable/sil_resim.xml" value="0.1921875" />
+        <entry key="app/src/main/res/drawable/welcomebackground.xml" value="0.2564814814814815" />
         <entry key="app/src/main/res/drawable/yemek_card_rounded.xml" value="0.1921875" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_on_board.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_splash.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_welcome.xml" value="0.2833333333333333" />
         <entry key="app/src/main/res/layout/fragment_anasayfa.xml" value="0.25" />
         <entry key="app/src/main/res/layout/fragment_sepet.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_welcome.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_yemek_detay.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/layout_slide.xml" value="0.1" />
         <entry key="app/src/main/res/layout/sepet_card_tasarim.xml" value="0.1" />
         <entry key="app/src/main/res/layout/yemek_card_tasarim.xml" value="0.1" />
         <entry key="app/src/main/res/menu/menu_bottom.xml" value="0.13796296296296295" />
