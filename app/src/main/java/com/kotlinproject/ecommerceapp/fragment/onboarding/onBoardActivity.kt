@@ -24,7 +24,7 @@ class onBoardActivity : AppCompatActivity() {
     private lateinit var binding : ActivityOnBoardBinding
 
     companion object {
-        const val TOTAL_SLIDE = 4
+        const val TOTAL_SLIDE = 3
         var CURRENT_SLIDE = 0
     }
 

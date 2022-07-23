@@ -14,26 +14,22 @@ class SliderAdapter(context: Context) : PagerAdapter(){
         R.color.bg_screen1,
         R.color.bg_screen2,
         R.color.bg_screen3,
-        R.color.bg_screen4,
 
         )
     private val slideImage = arrayListOf(
-        R.drawable.bg_image1,
-        R.drawable.bg_image1,
-        R.drawable.bg_image1,
-        R.drawable.bg_image1,
+        R.drawable.onboard1,
+        R.drawable.onboard2,
+        R.drawable.onboard3,
     )
     private val slideTitle = arrayListOf(
         R.string.slide_1_title,
         R.string.slide_2_title,
         R.string.slide_3_title,
-        R.string.slide_4_title,
     )
     private val slideDesc = arrayListOf(
         R.string.slide_1_desc,
         R.string.slide_2_desc,
         R.string.slide_3_desc,
-        R.string.slide_4_desc,
     )
 
     override fun isViewFromObject(view: View, `object`: Any): Boolean {
