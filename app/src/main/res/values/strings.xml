@@ -21,4 +21,7 @@
     <string name="slide_4_desc">Yapmak İstediğiniz Yemeği Anlatın Yapabiliceniz Yemekleri Önerelim!</string>
 
 
+    <string name="forgotPassword"><b><i>I forgot my password</i></b></string>
+    <string name="Label"><b><i>Touch\'N Cook</i></b></string>
+
 </resources>

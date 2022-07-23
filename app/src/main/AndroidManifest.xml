@@ -13,6 +13,15 @@
         android:theme="@style/Theme.ECommerceApp"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".Activity.Auth.ForgotPasswordActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.Auth.SignUpActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.Auth.SiginActivity"
+            android:exported="true" />
+        <activity
             android:name=".fragment.onboarding.onBoardActivity"
             android:exported="true" />
         <activity
@@ -26,7 +35,7 @@
         </activity>
         <activity
             android:name=".MainActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
     </application>
 
 </manifest>

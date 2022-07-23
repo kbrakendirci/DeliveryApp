@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "461581649857",
+    "project_id": "deliveryapp-694a3",
+    "storage_bucket": "deliveryapp-694a3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:461581649857:android:b192449160b1dea4221140",
+        "android_client_info": {
+          "package_name": "com.kotlinproject.ecommerceapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "461581649857-8fp65mctn7r6odqcpqjbi0rf0du2g8h8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA16r4FzTxNpaR1xwIDO2VotWOqdM7XwAw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "461581649857-8fp65mctn7r6odqcpqjbi0rf0du2g8h8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

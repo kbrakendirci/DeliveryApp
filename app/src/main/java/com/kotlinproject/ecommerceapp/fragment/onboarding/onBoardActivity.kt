@@ -14,6 +14,7 @@ import android.R.string.no
 import android.content.Intent
 import androidx.appcompat.app.ActionBar
 import androidx.databinding.DataBindingUtil
+import com.kotlinproject.ecommerceapp.Activity.Auth.SiginActivity
 import com.kotlinproject.ecommerceapp.MainActivity
 import com.kotlinproject.ecommerceapp.databinding.ActivityOnBoardBinding
 import com.kotlinproject.ecommerceapp.databinding.FragmentAnasayfaBinding
@@ -62,7 +63,7 @@ class onBoardActivity : AppCompatActivity() {
                         TOTAL_SLIDE - 1 -> {
                             binding.btnNext.text = getString(R.string.finish)
                             binding.btnNext.setOnClickListener {
-                                val i = Intent(applicationContext, MainActivity::class.java)
+                                val i = Intent(applicationContext, SiginActivity::class.java)
                                 startActivity(i)
                                 finish()
                             }

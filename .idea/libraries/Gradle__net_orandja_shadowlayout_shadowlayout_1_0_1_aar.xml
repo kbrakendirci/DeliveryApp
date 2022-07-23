@@ -1,9 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: net.orandja.shadowlayout:shadowlayout:1.0.1@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/6c1dcc5442eb2aa56900888b58d73e52/transformed/jetified-shadowlayout-1.0.1/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/6c1dcc5442eb2aa56900888b58d73e52/transformed/jetified-shadowlayout-1.0.1/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/6c1dcc5442eb2aa56900888b58d73e52/transformed/jetified-shadowlayout-1.0.1/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/bc7266b02b6279e4a7a34530b957865d/transformed/jetified-shadowlayout-1.0.1/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/bc7266b02b6279e4a7a34530b957865d/transformed/jetified-shadowlayout-1.0.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/bc7266b02b6279e4a7a34530b957865d/transformed/jetified-shadowlayout-1.0.1/res" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.orandja.shadowlayout/shadowlayout/1.0.1/a8ba11cd2422b30c522d0f63456253b3d49f26e/shadowlayout-1.0.1-javadoc.jar!/" />
