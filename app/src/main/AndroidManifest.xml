@@ -13,6 +13,12 @@
         android:theme="@style/Theme.ECommerceApp"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".fragment.profil.AccountDetails"
+            android:exported="true" />
+        <activity
+            android:name=".fragment.profil.ChangeMyPassword"
+            android:exported="true" />
+        <activity
             android:name=".Activity.Auth.ForgotPasswordActivity"
             android:exported="true" />
         <activity

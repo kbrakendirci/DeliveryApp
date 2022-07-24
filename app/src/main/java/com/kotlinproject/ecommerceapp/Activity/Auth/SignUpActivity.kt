@@ -11,6 +11,7 @@ import com.kotlinproject.ecommerceapp.R
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.auth.ktx.auth
+import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.ktx.Firebase
 import com.kotlinproject.ecommerceapp.utils.loadingDialog
 import kotlinx.android.synthetic.main.activity_sign_up.*
@@ -76,11 +77,28 @@ class SignUpActivity : AppCompatActivity() {
             }
     }
 
+    private fun saveFireStore(firstName: String,secondName: String, userEmail: String, userUid : String) {
+        val db = FirebaseFirestore.getInstance()
+        val user: MutableMap<String, Any> = HashMap()
+        user["firstname"] = firstName
+        user["secondname"] = secondName
+        user["email"] = userEmail
+        user["count"]= 0
+        db.collection("users").document(userUid)
+            .set(user)
+            .addOnSuccessListener {
+                Toast.makeText(this, "You Signed In successfully", Toast.LENGTH_LONG).show()
 
+            }
+            .addOnFailureListener {
+                auth.currentUser?.delete()
+            }
+    }
     fun updateUI(account: FirebaseUser?) {
         if (account != null) {
             sendConfirmationEmail()
-              onBackPressed()
+            saveFireStore(etRegisterName.text.toString(),etRegisterSurName.text.toString(),etRegisterEmail.text.toString(), account.uid)
+            onBackPressed()
         } else {
             loadingDialog.dismisDialog()
             showOneActionAlert("Error!","Something went wrong, please try again.",null)

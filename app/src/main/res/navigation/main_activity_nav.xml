@@ -33,5 +33,22 @@
         android:id="@+id/profilFragment"
         android:name="com.kotlinproject.ecommerceapp.fragment.ProfilFragment"
         android:label="fragment_profil"
-        tools:layout="@layout/fragment_profil" />
+        tools:layout="@layout/fragment_profil" >
+        <action
+            android:id="@+id/action_navigation_authentication_to_change_My_Password"
+            app:destination="@id/changeMyPassword" />
+        <action
+            android:id="@+id/action_profilFragment_to_accountDetails"
+            app:destination="@id/accountDetails" />
+    </fragment>
+    <activity
+        android:id="@+id/changeMyPassword"
+        android:name="com.kotlinproject.ecommerceapp.fragment.profil.ChangeMyPassword"
+        android:label="activity_change_my_password"
+        tools:layout="@layout/activity_change_my_password" />
+    <activity
+        android:id="@+id/accountDetails"
+        android:name="com.kotlinproject.ecommerceapp.fragment.profil.AccountDetails"
+        android:label="activity_account_details"
+        tools:layout="@layout/activity_account_details" />
 </navigation>
