@@ -69,8 +69,6 @@ class SiginActivity : AppCompatActivity() {
         etLoginPassword.addTextChangedListener(textWatcher)
 
         LoginBtn.isClickable = false
-        LoginBtn.isEnabled = false
-
 
         // Initialize Firebase Auth
         auth = Firebase.auth
@@ -86,11 +84,11 @@ class SiginActivity : AppCompatActivity() {
             if(isEmailValid(etLoginEmail.text.toString()) && etLoginPassword.text!!.isNotEmpty()){
                 //TODO: button active disactive
                 LoginBtn.isClickable = true
-                LoginBtn.isEnabled = true
+
 
             }else  {
                 LoginBtn.isClickable = false
-                LoginBtn.isEnabled = false
+
             }
         }
         override fun afterTextChanged(s: Editable?) {}

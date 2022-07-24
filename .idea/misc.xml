@@ -24,12 +24,13 @@
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_on_board.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_sigin.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/activity_sign_up.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_sign_up.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_splash.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_welcome.xml" value="0.2833333333333333" />
         <entry key="app/src/main/res/layout/custom_dialog_loading.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_anasayfa.xml" value="0.25" />
-        <entry key="app/src/main/res/layout/fragment_sepet.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_profil.xml" value="0.22685185185185186" />
+        <entry key="app/src/main/res/layout/fragment_sepet.xml" value="0.165" />
         <entry key="app/src/main/res/layout/fragment_welcome.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_yemek_detay.xml" value="0.1" />
         <entry key="app/src/main/res/layout/layout_slide.xml" value="0.1" />
