@@ -35,6 +35,7 @@ class SepetFragment : Fragment() {
             listeSepet = viewModel.sepetListesi.value!!
 
             tasarim.toplamFiyat.text = toplamFiyat(listeSepet, listeSepet.size - 1).toString() + " ₺"
+            tasarim.geneltoplamFiyat.text=genelToplamFiyat(listeSepet, listeSepet.size - 1).toString() + " ₺"
         }
 
         return tasarim.root
@@ -62,5 +63,17 @@ class SepetFragment : Fragment() {
 
         }
         return toplam
+    }
+    fun genelToplamFiyat (listeSepet: List<Sepet>, size : Int) : Int {
+
+        var toplam = 0
+
+        for(s in 0..size) {
+
+            toplam += (listeSepet.get(s).yemek_siparis_adet.toInt() * listeSepet.get(s).yemek_fiyat.toInt())
+
+        }
+        val kuryeücreti=toplam+20
+        return kuryeücreti
     }
 }
