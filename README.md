@@ -1,6 +1,6 @@
 # DeliveryApp
 
-Kullanılan Teknolojiler
+Kullanılan Teknolojiler                                                                                                                                     
 Mvvm
 Databinding
 ViewBinding
