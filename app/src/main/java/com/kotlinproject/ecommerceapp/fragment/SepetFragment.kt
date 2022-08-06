@@ -1,4 +1,5 @@
 package com.kotlinproject.ecommerceapp.fragment
+import android.graphics.Color
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -6,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.viewModels
+import com.google.android.material.snackbar.Snackbar
 import com.kotlinproject.ecommerceapp.MainActivity
 import com.kotlinproject.ecommerceapp.R
 import com.kotlinproject.ecommerceapp.adapter.SepetAdapter
@@ -40,6 +42,10 @@ class SepetFragment : Fragment() {
 
         return tasarim.root
     }
+    fun siparişverildiBildirim(){ Snackbar.make(requireView(), "Siparişiniz Verildi", Snackbar.LENGTH_LONG)
+        .setTextColor(Color.BLUE)
+        .setBackgroundTint(Color.WHITE)
+        .show() }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

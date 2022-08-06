@@ -48,7 +48,7 @@
         android:layout_alignParentBottom="true"
 
         android:fontFamily="serif"
-        android:text="precious"
+        android:text="previous"
         android:textColor="@android:color/white"
         android:visibility="invisible" />
 </RelativeLayout>

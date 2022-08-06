@@ -94,7 +94,7 @@
             android:layout_marginStart="32dp"
             android:layout_marginTop="24dp"
             android:fontFamily="@font/syne_tactile"
-            android:text="Açıklama"
+            android:text="Ürün Detay"
             android:textColor="@color/black"
             android:textSize="24sp"
             android:textStyle="bold"
@@ -146,7 +146,7 @@
             android:layout_marginStart="32dp"
             android:layout_marginTop="16dp"
             android:fontFamily="@font/syne_tactile"
-            android:text="Bulabileceğinizin en iyisi ve uygun fiyata Kaçırma!! "
+            android:text="Tek tıkla karnı açken sabrı azalan müşterilere düşünce hızında sipariş imkanı veriyor"
             android:textSize="16sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textViewKullaniciAdi" />

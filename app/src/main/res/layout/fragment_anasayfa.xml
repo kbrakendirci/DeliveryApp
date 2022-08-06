@@ -119,7 +119,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:fontFamily="@font/syne_tactile"
-                android:onClick="@{() -> anasayfaFragment.fiyatSirala()}"
+                android:onClick="@{() -> anasayfaFragment.fiyatAzalanSirala()}"
                 android:text="Fiyata Göre ▼"
                 android:textColor="@color/white"
                 app:chipBackgroundColor="@color/chip"

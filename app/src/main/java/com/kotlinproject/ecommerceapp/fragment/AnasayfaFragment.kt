@@ -37,8 +37,6 @@ class AnasayfaFragment : Fragment() , SearchView.OnQueryTextListener {
             val adapterPopular = PopularCardAdapter(requireContext(),it,viewModel)
             tasarim.popularAdapter = adapterPopular
         }
-
-
         return tasarim.root
     }
 
@@ -81,6 +79,7 @@ class AnasayfaFragment : Fragment() , SearchView.OnQueryTextListener {
     }
 
     fun fiyatSirala(){ viewModel.fiyatArtanSirala() }
+    fun fiyatAzalanSirala(){ viewModel.fiyatAzalanSirala() }
 
     fun A_ZSirala(){ viewModel.A_ZSirala() }
 
