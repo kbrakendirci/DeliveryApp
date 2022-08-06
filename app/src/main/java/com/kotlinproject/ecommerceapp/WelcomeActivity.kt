@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.CountDownTimer
 import android.view.animation.AnimationUtils
+import com.kotlinproject.ecommerceapp.Activity.onboard.OnboardingActivity
 import com.kotlinproject.ecommerceapp.databinding.ActivityWelcomeBinding
 import com.kotlinproject.ecommerceapp.databinding.FragmentWelcomeBinding
 import com.kotlinproject.ecommerceapp.fragment.onboarding.onBoardActivity
@@ -35,7 +36,7 @@ class WelcomeActivity : AppCompatActivity() {
             //Animasyon bitmeden 1sn sonra MainActivity açılsın
             object : CountDownTimer(1000,1000){
                 override fun onFinish() {
-                    var intent = Intent(applicationContext, onBoardActivity::class.java)
+                    var intent = Intent(applicationContext, OnboardingActivity::class.java)
                     startActivity(intent)
                 }
 

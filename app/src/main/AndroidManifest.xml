@@ -13,6 +13,9 @@
         android:theme="@style/Theme.ECommerceApp"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".Activity.onboard.OnboardingActivity"
+            android:exported="true" />
+        <activity
             android:name=".fragment.profil.AccountDetails"
             android:exported="true" />
         <activity

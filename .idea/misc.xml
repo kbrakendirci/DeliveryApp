@@ -3,6 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable-v24/btn_orange_rounded_normal.xml" value="0.1824074074074074" />
+        <entry key="app/src/main/res/drawable-v24/btn_orange_rounded_pressed.xml" value="0.1824074074074074" />
+        <entry key="app/src/main/res/drawable-v24/btn_orange_rounded_selector.xml" value="0.1824074074074074" />
         <entry key="app/src/main/res/drawable/btn_top.xml" value="0.3055555555555556" />
         <entry key="app/src/main/res/drawable/buronrenk.xml" value="0.30277777777777776" />
         <entry key="app/src/main/res/drawable/button_background.xml" value="0.1921875" />
@@ -26,12 +29,17 @@
         <entry key="app/src/main/res/layout/activity_forgot_password.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_on_board.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_onboarding.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_sigin.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_sign_up.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_splash.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_welcome.xml" value="0.2833333333333333" />
         <entry key="app/src/main/res/layout/custom_dialog_loading.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_anasayfa.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fragment_onboarding1.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_onboarding2.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_onboarding3.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_onboarding4.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_profil.xml" value="0.22685185185185186" />
         <entry key="app/src/main/res/layout/fragment_profil2.xml" value="0.21770833333333334" />
         <entry key="app/src/main/res/layout/fragment_sepet.xml" value="0.25" />
