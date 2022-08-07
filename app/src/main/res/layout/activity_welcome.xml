@@ -4,45 +4,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/bg_screen1"
+    android:background="@drawable/onboardbackground"
     tools:context=".WelcomeActivity">
 
-    <androidx.appcompat.widget.AppCompatButton
+    <ImageView
         android:id="@+id/button"
-        android:layout_width="300dp"
+        android:layout_width="400dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:background="@drawable/buronrenk"
+        android:gravity="center"
         android:paddingTop="5dp"
         android:paddingBottom="5dp"
-        android:text="@string/Label"
+        android:src="@drawable/fa"
+
+        android:textColor="@color/maincolor"
         android:textSize="40dp"
         android:textStyle="bold"
-        android:textColor="@color/maincolor"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.508"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginBottom="100dp"/>
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="280dp"
-        android:layout_height="300dp"
 
-        android:layout_marginStart="30dp"
-        android:layout_marginEnd="30dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button">
-
-        <ImageView
-
-            android:id="@+id/imageView3"
-            android:layout_width="280dp"
-            android:layout_height="300dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:srcCompat="@drawable/fooddelivery" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

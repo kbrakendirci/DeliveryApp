@@ -30,9 +30,7 @@
         <activity
             android:name=".Activity.Auth.SiginActivity"
             android:exported="true" />
-        <activity
-            android:name=".fragment.onboarding.onBoardActivity"
-            android:exported="true" />
+
         <activity
             android:name=".WelcomeActivity"
             android:exported="true">

@@ -17,6 +17,7 @@
         <entry key="app/src/main/res/drawable/ic_lock.xml" value="0.3055555555555556" />
         <entry key="app/src/main/res/drawable/ic_person.xml" value="0.3055555555555556" />
         <entry key="app/src/main/res/drawable/iconbackground.xml" value="0.1921875" />
+        <entry key="app/src/main/res/drawable/onboardbackground.xml" value="0.228125" />
         <entry key="app/src/main/res/drawable/profil.xml" value="0.1921875" />
         <entry key="app/src/main/res/drawable/resim_ara.xml" value="0.1921875" />
         <entry key="app/src/main/res/drawable/rounded_edge.xml" value="0.1921875" />
@@ -26,11 +27,11 @@
         <entry key="app/src/main/res/drawable/yemek_card_rounded.xml" value="0.1921875" />
         <entry key="app/src/main/res/layout/activity_account_details.xml" value="0.21770833333333334" />
         <entry key="app/src/main/res/layout/activity_change_my_password.xml" value="0.21770833333333334" />
-        <entry key="app/src/main/res/layout/activity_forgot_password.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_forgot_password.xml" value="0.165" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_on_board.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_onboarding.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/activity_sigin.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_sigin.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_sign_up.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_splash.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_welcome.xml" value="0.2833333333333333" />
@@ -46,6 +47,7 @@
         <entry key="app/src/main/res/layout/fragment_welcome.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_yemek_detay.xml" value="0.1" />
         <entry key="app/src/main/res/layout/layout_slide.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/popular_card_tasarim.xml" value="0.1" />
         <entry key="app/src/main/res/layout/sepet_card_tasarim.xml" value="0.1" />
         <entry key="app/src/main/res/layout/yemek_card_tasarim.xml" value="0.1" />
         <entry key="app/src/main/res/menu/menu_bottom.xml" value="0.13796296296296295" />

@@ -1,54 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:id="@+id/layout_container"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:padding="30dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_container"
     tools:context=".Activity.onboard.OnboardingActivity"
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools">
+    android:background="@drawable/onboardbackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
-    <View
-        android:id="@+id/fake_statusbar_view"
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:background="@color/white"/>
+        android:layout_height="match_parent"
+        android:layout_marginTop="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="80dp"
+        android:alpha="0.3"
+        android:background="@color/white"
+        app:cardCornerRadius="30dp"
+        tools:ignore="MissingConstraints" />
 
-    <com.airbnb.lottie.LottieAnimationView
-        android:id="@+id/image_onboarding"
-        android:layout_width="250dp"
-        android:layout_height="250dp"
-        android:layout_centerHorizontal="true"
-        android:layout_margin="30dp"
-        android:scaleType="centerCrop"
-        app:lottie_rawRes="@raw/lottie_developer"
-        app:lottie_loop="true"
-        app:lottie_autoPlay="true" />
 
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="70dp">
+        android:layout_centerInParent="true"
+        android:layout_margin="20dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/image_onboarding"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/lottie_developer"
+            tools:layout_editor_absoluteX="30dp" />
 
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/text_onboarding_title"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/title_onboarding_1"
-            android:textSize="19sp"
-            android:textStyle="bold"
-            android:textColor="@color/black"
-            android:layout_marginBottom="10dp"/>
+            android:fontFamily="serif"
+            android:text="@string/slide_1_title"
+            android:textAlignment="center"
+            android:textColor="@color/maincolor"
+
+            android:textSize="@dimen/slide_title"
+            android:textStyle="bold" />
 
         <androidx.appcompat.widget.AppCompatTextView
-            android:id="@+id/text_onboarding_description"
-            android:layout_width="match_parent"
+            android:id="@+id/text_onboarding_description"    android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/description_onboarding_1"
-            android:textSize="14sp"
-            android:textColor="@color/black" />
 
+            android:fontFamily="serif"
+            android:paddingLeft="@dimen/desc_padding"
+            android:paddingRight="@dimen/desc_padding"
+            android:text="@string/slide_1_desc"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/slide_desc" />
     </LinearLayout>
 </RelativeLayout>

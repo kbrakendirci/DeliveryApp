@@ -7,8 +7,6 @@ import android.os.CountDownTimer
 import android.view.animation.AnimationUtils
 import com.kotlinproject.ecommerceapp.Activity.onboard.OnboardingActivity
 import com.kotlinproject.ecommerceapp.databinding.ActivityWelcomeBinding
-import com.kotlinproject.ecommerceapp.databinding.FragmentWelcomeBinding
-import com.kotlinproject.ecommerceapp.fragment.onboarding.onBoardActivity
 
 class WelcomeActivity : AppCompatActivity() {
     private lateinit var binding: ActivityWelcomeBinding
@@ -18,7 +16,7 @@ class WelcomeActivity : AppCompatActivity() {
         binding = ActivityWelcomeBinding.inflate(layoutInflater)
         setContentView(binding.root)
         binding.button.setOnClickListener{
-            var intent = Intent(applicationContext, onBoardActivity::class.java)
+            var intent = Intent(applicationContext, OnboardingActivity::class.java)
             startActivity(intent)
 
         }
@@ -27,10 +25,7 @@ class WelcomeActivity : AppCompatActivity() {
         var bulunduguyerdenAsagi = AnimationUtils.loadAnimation(this,R.anim.bulunanyerden_asagi)
 
         binding.button.animation=yukaridanAsagi
-        binding.imageView3.animation=asagidanyulari
         binding.button.setOnClickListener {
-
-            binding.imageView3.startAnimation(bulunduguyerdenAsagi)
 
 
             //Animasyon bitmeden 1sn sonra MainActivity açılsın
