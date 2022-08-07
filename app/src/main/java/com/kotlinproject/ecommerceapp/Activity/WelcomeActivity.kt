@@ -1,4 +1,4 @@
-package com.kotlinproject.ecommerceapp
+package com.kotlinproject.ecommerceapp.Activity
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.os.CountDownTimer
 import android.view.animation.AnimationUtils
 import com.kotlinproject.ecommerceapp.Activity.onboard.OnboardingActivity
+import com.kotlinproject.ecommerceapp.R
 import com.kotlinproject.ecommerceapp.databinding.ActivityWelcomeBinding
 
 class WelcomeActivity : AppCompatActivity() {
@@ -20,9 +21,9 @@ class WelcomeActivity : AppCompatActivity() {
             startActivity(intent)
 
         }
-        var yukaridanAsagi = AnimationUtils.loadAnimation(this,R.anim.yukaridan_asagi)
-        var asagidanyulari = AnimationUtils.loadAnimation(this,R.anim.asagidan_yukari)
-        var bulunduguyerdenAsagi = AnimationUtils.loadAnimation(this,R.anim.bulunanyerden_asagi)
+        var yukaridanAsagi = AnimationUtils.loadAnimation(this, R.anim.yukaridan_asagi)
+        var asagidanyulari = AnimationUtils.loadAnimation(this, R.anim.asagidan_yukari)
+        var bulunduguyerdenAsagi = AnimationUtils.loadAnimation(this, R.anim.bulunanyerden_asagi)
 
         binding.button.animation=yukaridanAsagi
         binding.button.setOnClickListener {

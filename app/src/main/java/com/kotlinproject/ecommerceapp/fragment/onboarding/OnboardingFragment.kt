@@ -11,6 +11,7 @@ import com.kotlinproject.ecommerceapp.R
 import kotlinx.android.synthetic.main.fragment_onboarding1.view.*
 
 class OnboardingFragment : Fragment() {
+    private lateinit var binding:View
     private var title: String? = null
     private var description: String? = null
     private var imageResource = 0
@@ -30,16 +31,15 @@ class OnboardingFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+        binding=inflater.inflate(R.layout.fragment_onboarding1, container, false)
         // Inflate the layout for this fragment
-        val rootLayout: View =
-            inflater.inflate(R.layout.fragment_onboarding1, container, false)
-        tvTitle = rootLayout.text_onboarding_title
-        tvDescription = rootLayout.text_onboarding_description
-        image = rootLayout.image_onboarding
+        tvTitle = binding.text_onboarding_title
+        tvDescription = binding.text_onboarding_description
+        image = binding.image_onboarding
         tvTitle.text = title
         tvDescription.text = description
         image.setAnimation(imageResource)
-        return rootLayout
+        return binding
     }
 
     companion object {
